@@ -6,38 +6,46 @@ This document helps you quickly resume work on the Daily Tracker App.
 
 ## Current Status
 
-✅ **All critical bugs fixed!**
-- Transcription now works correctly
-- Workout detection fixed (no false positives)
-- Multiple food items parsing fixed
-- Audio session properly configured
+✅ **Major usability improvements completed!**
+- Settings keyboard fix (can dismiss and navigate)
+- Mixed food and workout entries from single message
+- Multiple workouts support (not just one)
+- Duplicate detection with preview UI
+- Transcription editing and re-recording
+- Food parser improvements (no more false positives)
+- Voice correction (partial implementation)
+- Code published to GitHub
 
-## Recent Changes (Last Session)
+## Recent Changes (Last Session - Jan 15, 2025)
 
-**4 files modified with ~15 lines changed:**
-1. `SpeechRecognitionService.swift` - Fixed transcription completion handler
-2. `RecordingService.swift` - Added audio session configuration
-3. `WorkoutParser.swift` - Fixed false workout detection
-4. `FoodParser.swift` - Fixed multiple items parsing + improved quantity detection
+**6 files modified, ~400 lines changed:**
+1. `SettingsView.swift` - Keyboard dismissal fix
+2. `RecordingView.swift` - Mixed entries, preview UI, editing, voice correction
+3. `WorkoutParser.swift` - Multiple workouts support
+4. `FoodParser.swift` - Workout filtering, unit improvements
+5. `DataStorageManager.swift` - Duplicate detection
+6. `.gitignore` - New file for Git
 
-📄 **See `SESSION_SUMMARY.md`** for detailed change log
+📄 **See `SESSION_SUMMARY_2025-01-15.md`** for detailed change log
 
 ## What to Do Next
 
-1. **Test the fixes**:
-   - Record food entries (try multiple items: "2 rotis and dal")
-   - Record workout entries (try: "I ran for 30 minutes")
-   - Test quantity detection ("a roti", "couple of", etc.)
+1. **Test new features**:
+   - Mixed entries: "I had 2 rotis and ran for 30 minutes"
+   - Multiple workouts: "I ran for 30 minutes and did yoga for 20 minutes"
+   - Transcription editing: Edit bad transcriptions
+   - Duplicate detection: Record same entry twice within 30 minutes
+   - Preview deletion: Delete items before saving
 
-2. **Monitor logs** in Xcode console:
-   - Look for any transcription errors
-   - Check for parsing issues
-   - Note any foods not found in database
+2. **Git/GitHub workflow**:
+   - Pull latest: `git pull origin main`
+   - Make changes, commit, push
+   - Repository: `https://github.com/gulatank/daily-tracker-app.git`
 
-3. **Iterate based on feedback**:
-   - Add more foods to database if needed
-   - Improve parser patterns based on real usage
-   - Fix any edge cases discovered
+3. **Future implementations** (from plans):
+   - Data export (CSV/JSON) for analytics
+   - Production deployment scripts
+   - TestFlight setup (optional)
 
 ## Key Files for Common Tasks
 
@@ -69,10 +77,12 @@ xcodebuild -project DailyTrackerApp.xcodeproj -scheme DailyTrackerApp -sdk iphon
 
 ## Project Documentation
 
-- 📄 `SESSION_SUMMARY.md` - Detailed log of last session's changes
+- 📄 `SESSION_SUMMARY_2025-01-15.md` - Detailed log of last session's changes
 - 📄 `PROJECT_STATUS.md` - Overall project status and architecture
 - 📄 `DEPLOYMENT.md` - Deployment guide
-- 📄 `RECORDING_ISSUE.md` - Previous debugging notes (now resolved)
+- 📄 `BACKLOG.md` - Future enhancements (food database, etc.)
+- 📄 `GITHUB_SETUP.md` - GitHub setup and workflow guide
+- 📄 `RECORDING_ISSUE.md` - Previous debugging notes (resolved)
 
 ## Quick Reference
 
