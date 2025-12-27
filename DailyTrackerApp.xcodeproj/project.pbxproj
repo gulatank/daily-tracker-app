@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81E701C52EFF8EF7004E15AB /* DataStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E701C42EFF8EF7004E15AB /* DataStorageManager.swift */; };
+		AA0000010000000000000001 /* DailyTrackerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000020000000000000001 /* DailyTrackerAppApp.swift */; };
+		AA0000030000000000000001 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000040000000000000001 /* RecordingView.swift */; };
+		AA0000050000000000000001 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000060000000000000001 /* HistoryView.swift */; };
+		AA0000070000000000000001 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000080000000000000001 /* StatisticsView.swift */; };
+		AA0000090000000000000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000A0000000000000001 /* SettingsView.swift */; };
+		AA00000B0000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA00000C0000000000000001 /* Assets.xcassets */; };
+		AA00000D0000000000000001 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA00000E0000000000000001 /* Preview Assets.xcassets */; };
+		AA00000F0000000000000001 /* FoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000100000000000000001 /* FoodEntry.swift */; };
+		AA0000110000000000000001 /* WorkoutEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000120000000000000001 /* WorkoutEntry.swift */; };
+		AA0000130000000000000001 /* DailySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000140000000000000001 /* DailySummary.swift */; };
+		AA0000150000000000000001 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000160000000000000001 /* UserProfile.swift */; };
+		AA0000170000000000000001 /* RecordingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000180000000000000001 /* RecordingService.swift */; };
+		AA0000190000000000000001 /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001A0000000000000001 /* SpeechRecognitionService.swift */; };
+		AA00001B0000000000000001 /* FoodParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001C0000000000000001 /* FoodParser.swift */; };
+		AA00001D0000000000000001 /* WorkoutParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001E0000000000000001 /* WorkoutParser.swift */; };
+		AA00001F0000000000000001 /* FoodDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000200000000000000001 /* FoodDatabaseService.swift */; };
+		AA0000210000000000000001 /* WorkoutCalorieCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000220000000000000001 /* WorkoutCalorieCalculator.swift */; };
+		AA0000230000000000000001 /* StatisticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000240000000000000001 /* StatisticsService.swift */; };
+		AA0000250000000000000001 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000260000000000000001 /* CoreDataManager.swift */; };
+		AA0000270000000000000001 /* FoodEntryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000280000000000000001 /* FoodEntryRow.swift */; };
+		AA0000290000000000000001 /* WorkoutEntryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00002A0000000000000001 /* WorkoutEntryRow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		81E701C42EFF8EF7004E15AB /* DataStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorageManager.swift; sourceTree = "<group>"; };
+		AA0000020000000000000001 /* DailyTrackerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTrackerAppApp.swift; sourceTree = "<group>"; };
+		AA0000040000000000000001 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
+		AA0000060000000000000001 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		AA0000080000000000000001 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		AA00000A0000000000000001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AA00000C0000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA00000E0000000000000001 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA0000100000000000000001 /* FoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodEntry.swift; sourceTree = "<group>"; };
+		AA0000120000000000000001 /* WorkoutEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutEntry.swift; sourceTree = "<group>"; };
+		AA0000140000000000000001 /* DailySummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySummary.swift; sourceTree = "<group>"; };
+		AA0000160000000000000001 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		AA0000180000000000000001 /* RecordingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingService.swift; sourceTree = "<group>"; };
+		AA00001A0000000000000001 /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
+		AA00001C0000000000000001 /* FoodParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodParser.swift; sourceTree = "<group>"; };
+		AA00001E0000000000000001 /* WorkoutParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutParser.swift; sourceTree = "<group>"; };
+		AA0000200000000000000001 /* FoodDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDatabaseService.swift; sourceTree = "<group>"; };
+		AA0000220000000000000001 /* WorkoutCalorieCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCalorieCalculator.swift; sourceTree = "<group>"; };
+		AA0000240000000000000001 /* StatisticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsService.swift; sourceTree = "<group>"; };
+		AA0000260000000000000001 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		AA0000280000000000000001 /* FoodEntryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodEntryRow.swift; sourceTree = "<group>"; };
+		AA00002A0000000000000001 /* WorkoutEntryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutEntryRow.swift; sourceTree = "<group>"; };
+		AA00002D0000000000000001 /* DailyTrackerApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyTrackerApp.entitlements; sourceTree = "<group>"; };
+		AA00002E0000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA0000300000000000000001 /* DailyTrackerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyTrackerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA0000310000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA00002F0000000000000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000300000000000000001 /* DailyTrackerApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA0000320000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				AA0000330000000000000001 /* DailyTrackerApp */,
+				AA00002F0000000000000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA0000330000000000000001 /* DailyTrackerApp */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000020000000000000001 /* DailyTrackerAppApp.swift */,
+				AA0000340000000000000001 /* Models */,
+				AA0000350000000000000001 /* Services */,
+				AA0000360000000000000001 /* Views */,
+				AA0000370000000000000001 /* Resources */,
+				AA00002D0000000000000001 /* DailyTrackerApp.entitlements */,
+				AA00002E0000000000000001 /* Info.plist */,
+			);
+			path = DailyTrackerApp;
+			sourceTree = "<group>";
+		};
+		AA0000340000000000000001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000100000000000000001 /* FoodEntry.swift */,
+				AA0000120000000000000001 /* WorkoutEntry.swift */,
+				AA0000140000000000000001 /* DailySummary.swift */,
+				AA0000160000000000000001 /* UserProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA0000350000000000000001 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				81E701C42EFF8EF7004E15AB /* DataStorageManager.swift */,
+				AA0000180000000000000001 /* RecordingService.swift */,
+				AA00001A0000000000000001 /* SpeechRecognitionService.swift */,
+				AA00001C0000000000000001 /* FoodParser.swift */,
+				AA00001E0000000000000001 /* WorkoutParser.swift */,
+				AA0000200000000000000001 /* FoodDatabaseService.swift */,
+				AA0000220000000000000001 /* WorkoutCalorieCalculator.swift */,
+				AA0000240000000000000001 /* StatisticsService.swift */,
+				AA0000260000000000000001 /* CoreDataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA0000360000000000000001 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000040000000000000001 /* RecordingView.swift */,
+				AA0000060000000000000001 /* HistoryView.swift */,
+				AA0000080000000000000001 /* StatisticsView.swift */,
+				AA00000A0000000000000001 /* SettingsView.swift */,
+				AA0000380000000000000001 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA0000370000000000000001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA00000C0000000000000001 /* Assets.xcassets */,
+				AA0000390000000000000001 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA0000380000000000000001 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000280000000000000001 /* FoodEntryRow.swift */,
+				AA00002A0000000000000001 /* WorkoutEntryRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AA0000390000000000000001 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA00000E0000000000000001 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA00003A0000000000000001 /* DailyTrackerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA00003B0000000000000001 /* Build configuration list for PBXNativeTarget "DailyTrackerApp" */;
+			buildPhases = (
+				AA00003C0000000000000001 /* Sources */,
+				AA0000310000000000000001 /* Frameworks */,
+				AA00003D0000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DailyTrackerApp;
+			productName = DailyTrackerApp;
+			productReference = AA0000300000000000000001 /* DailyTrackerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA00003E0000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2620;
+			};
+			buildConfigurationList = AA00003F0000000000000001 /* Build configuration list for PBXProject "DailyTrackerApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA0000320000000000000001;
+			productRefGroup = AA00002F0000000000000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA00003A0000000000000001 /* DailyTrackerApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA00003D0000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA00000D0000000000000001 /* Preview Assets.xcassets in Resources */,
+				AA00000B0000000000000001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA00003C0000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000010000000000000001 /* DailyTrackerAppApp.swift in Sources */,
+				81E701C52EFF8EF7004E15AB /* DataStorageManager.swift in Sources */,
+				AA0000030000000000000001 /* RecordingView.swift in Sources */,
+				AA0000050000000000000001 /* HistoryView.swift in Sources */,
+				AA0000070000000000000001 /* StatisticsView.swift in Sources */,
+				AA0000090000000000000001 /* SettingsView.swift in Sources */,
+				AA00000F0000000000000001 /* FoodEntry.swift in Sources */,
+				AA0000110000000000000001 /* WorkoutEntry.swift in Sources */,
+				AA0000130000000000000001 /* DailySummary.swift in Sources */,
+				AA0000150000000000000001 /* UserProfile.swift in Sources */,
+				AA0000170000000000000001 /* RecordingService.swift in Sources */,
+				AA0000190000000000000001 /* SpeechRecognitionService.swift in Sources */,
+				AA00001B0000000000000001 /* FoodParser.swift in Sources */,
+				AA00001D0000000000000001 /* WorkoutParser.swift in Sources */,
+				AA00001F0000000000000001 /* FoodDatabaseService.swift in Sources */,
+				AA0000210000000000000001 /* WorkoutCalorieCalculator.swift in Sources */,
+				AA0000230000000000000001 /* StatisticsService.swift in Sources */,
+				AA0000250000000000000001 /* CoreDataManager.swift in Sources */,
+				AA0000270000000000000001 /* FoodEntryRow.swift in Sources */,
+				AA0000290000000000000001 /* WorkoutEntryRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA0000400000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 44Y2T4S5S5;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA0000410000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 44Y2T4S5S5;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AA0000420000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DailyTrackerApp/DailyTrackerApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DailyTrackerApp/Resources/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DailyTrackerApp/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs access to your microphone to record your voice entries.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app needs access to speech recognition to convert your voice recordings into food and workout data.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dailytracker.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA0000430000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DailyTrackerApp/DailyTrackerApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DailyTrackerApp/Resources/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DailyTrackerApp/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs access to your microphone to record your voice entries.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app needs access to speech recognition to convert your voice recordings into food and workout data.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dailytracker.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA00003B0000000000000001 /* Build configuration list for PBXNativeTarget "DailyTrackerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000420000000000000001 /* Debug */,
+				AA0000430000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA00003F0000000000000001 /* Build configuration list for PBXProject "DailyTrackerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000400000000000000001 /* Debug */,
+				AA0000410000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA00003E0000000000000001 /* Project object */;
+}
